@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced table</title>
+</head>
+
+<body>
+    <table border="1px" width="500px" rules="all">
+        <thead>
+            <tr>
+                <th colspan="3">Students data
+                </th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>siri</td>
+                <td>pune</td>
+                <td rowspan="2">12</td>
+            </tr>
+            <tr>
+                <td>ash</td>
+                <td>mumbai</td>
+
+            </tr>
+
+
+        </tbody>
+        <form action="./tut70.html">
+            <label for="name">Name: </label>
+            <input type="text" placeholder="Username" name="uname" value="Ashutosh" pattern="Ashutosh" required maxlength="10" minlength="3" title="Lorem ipsum dolor sit amet consectetur, " />
+            <br />
+            <label for="password">Password : </label>
+            <input type="password" placeholder="Password" name="pass" value="ABCD1234" pattern="ABCD1234" required title="Lorem ipsum dolor sit amet consectetur," />
+            <br />
+            <input type="submit" />
+        </form>
+
+</html>

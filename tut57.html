@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events&Listening to Events</title>
+    <style>
+        #btn{
+            padding:34px;
+            background-color: blue;
+            color:red;
+            border:2px solid black;
+            color:white;
+            border-radius: 8px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum odio possimus dicta?</p>
+    </div>
+    <button id="btn" onclick="togglehide()">
+        show height
+
+    </button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseout',function run(){
+            alert('mouse out')
+        });
+        
+
+        
+        function togglehide(){
+           // let btn=document.getElementById('btn');
+            //let para=document.getElementById('para');
+           if (para.style.display!="none"){
+               para.style.display="none";
+
+           }
+           else{
+               para.style.display="block";
+
+           }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

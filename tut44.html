@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+       
+        
+        body{
+            background-color: red ;
+     
+        }
+                @media(max-width:500px){
+            #box1{
+                display:block;
+                background-color: tomato;
+            }
+        }
+        @media(max-width:500px)and (min-width:300px){
+            #box2{
+                display:block;
+                background-color: turquoise;
+            }
+        }
+        @media(max-width:500px)and(min-width:800px){
+            #box3{
+                display:block;
+                background-color: yellow;
+                
+            }
+        }
+        .bdr{
+            border:2px solid black;
+            padding:23px;
+            background-color: wheat;
+
+        }
+        .container {
+            grid-area: navbar;
+            border:2px solid black;
+            padding:23px;
+            background-color: wheat;
+            display:grid;
+            grid-gap:1rem;
+            grid-template-areas: 
+            'nav nav nav'
+            'section section section'
+            'footer footer footer';
+
+        }
+
+        section {
+            grid-area: section;
+            border:2px solid black;
+            padding:23px;
+            background-color: wheat;
+
+        }
+
+        aside {
+            grid-area: aside;
+            border:2px solid black;
+            padding:23px;
+            background-color: wheat;
+
+        }
+        footer{
+            grid-area: footer;
+            border:2px solid black;
+            padding:23px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <nav >
+       Home about contact
+   </nav>
+   <section >
+       <h2>
+           learn css in hindi
+       </h2>
+   </section>
+   
+    </div>
+    <aside >
+        <h3>more aboout us</h3>
+    </aside>
+    <footer >copyright code with harry</footer>
+    
+</body>
+</html>

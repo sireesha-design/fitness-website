@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Fitness</title>
+
+
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: cursive;
+
+        margin: 0px;
+        padding: 0px;
+        background: url('bg.jpg');
+
+    }
+
+    .left {
+       /* border: 2px solid red;*/
+        display: inline-block;
+
+        top: 0px;
+        width: 10%;
+        height: 90px;
+
+        margin: 50px ;
+        
+        color: white;
+        margin-top: 32px;
+      
+
+
+    }
+
+    .mid {
+        /*border: 2px solid green;*/
+        display: inline-block;
+        width: 50%;
+        margin: 12px;
+        height: 80px;
+
+
+
+
+        top: 0px;
+
+    }
+
+    .right {
+
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /*border: 2px solid yellow;*/
+        width: 20%;
+        height: 40px;
+        margin:12px ;
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: white;
+        text-decoration: underline;
+        padding: 2px ;
+        color: grey;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: cursive;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+    .container{
+        border:2px solid green;
+        margin:2px 2px;
+        padding:75px;
+        width :33%;
+        display:inline-block;
+        border-radius: 2px;
+        margin:106px 80px;
+        border:2px solid white;
+        color:white;
+        text-emphasis-color: white;
+        right:34px;
+        top:33px;
+    }
+    .form-group input{
+        font-family: cursive;
+        text-align:center;
+        display:inline-block;
+        width:443px;
+        padding:6px;
+        border:2px solid black;
+        margin:13px auto;
+        text-align: center;
+        font-size: 12px;
+
+
+    }
+    .container h3{
+        text-align:center;
+    }
+    .container button{
+        display:block;
+        margin:auto;
+        width:23%;
+
+    }
+    
+</style>
+
+<body>
+    <header class="header">
+
+
+        <div class="left">
+            <img src="img.jpg" alt="" class="src">
+            <div>Siri Fitness</div>
+
+        </div>
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">call Us Now</button><button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h3>join the best gym of delhi now</h3>
+        <form action="noaction.php" class="action">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <button class="btn"text-align="center">submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
